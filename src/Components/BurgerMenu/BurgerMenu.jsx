@@ -31,11 +31,17 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
             exit={{ x: 200 }}
             transition={{ duration: 0.3 }}
           >
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/"}>
+              <p onClick={changeToCross}>Home</p>
+            </NavLink>
             {getLoggedInUser && (
               <>
-                <NavLink to={"/create-blog"}>Create Blog</NavLink>
-                <NavLink to={"/profile"}>Profile</NavLink>
+                <NavLink to={"/create-blog"} onClcik={changeToCross}>
+                  <p onClick={changeToCross}>Create Blog</p>
+                </NavLink>
+                <NavLink to={"/profile"} onClcik={changeToCross}>
+                  <p onClick={changeToCross}>Profile</p>
+                </NavLink>
                 <LoadingButton
                   loading={isLoading}
                   onClcik={logoutHandleClick}
@@ -45,7 +51,9 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
             )}
             {!getLoggedInUser && (
               <>
-                <NavLink to={"/login"}>Login/SignUp</NavLink>
+                <NavLink to={"/login"} onClcik={changeToCross}>
+                  <p onClick={changeToCross}>Login/SignUp</p>
+                </NavLink>
               </>
             )}
           </motion.div>
