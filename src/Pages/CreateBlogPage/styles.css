@@ -1,0 +1,10 @@
+.create-blog-container {
+    width: 50%;
+    height: 80%;
+}
+
+@media screen and (max-width:1080px) {
+    .create-blog-container {
+        width: 95%;
+    }
+}

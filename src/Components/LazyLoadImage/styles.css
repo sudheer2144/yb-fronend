@@ -1,0 +1,8 @@
+.loader-comp {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

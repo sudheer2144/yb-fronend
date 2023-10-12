@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.inputContainer h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.inputContainer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 30%;
+    height: 25rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 20px 5px var(--dark-theme);
+}
+
+.switchLink {
+    text-decoration: underline;
+    color: var(--purple-grey);
+    transition: all 0.2s;
+}
+
+.switchLink:hover {
+    cursor: pointer;
+    color: var(--grey);
+}
+
+@media screen and (max-width:1080px) {
+    .inputContainer {
+        width: 80%;
+    }
+}

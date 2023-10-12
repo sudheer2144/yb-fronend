@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@300&family=Varela&display=swap');
+
+
+:root {
+    --theme: #292929;
+    --dark-theme: #131313;
+    --blue: #18b2de;
+    --white: #e8e8e8;
+    --grey: #d7d7d7;
+    --purple-grey: #8f8297;
+    --background-gradient: linear-gradient(177.7deg,
+            rgba(58, 129, 191, 0.3) 1.63%,
+            rgba(65, 48, 90, 0.009) 148.18%);
+}
+
+[data-theme="dark-off"] {
+    --theme: #c6c0c0;
+    --dark-theme: #047791;
+    --white: #111111;
+    --grey: #232121;
+    --purple-grey: #595858;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--theme);
+    color: var(--white);
+}

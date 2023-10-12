@@ -1,0 +1,59 @@
+.custom-input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--purple);
+    border: 2px solid var(--purple-grey);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--grey);
+}
+
+.custom-textarea-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--purple);
+    border: 2px solid var(--purple-grey);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.custom-textarea-input:focus {
+    outline: none;
+    border-color: var(--grey);
+}
+
+.custom-file-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    border-style: dashed;
+}
+
+.blog-label {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.blog-label:hover {
+    cursor: pointer;
+}
+
+.file-selected {
+    background-color: var(--dark-theme);
+    color: var(--grey);
+}
+
+.blog-image-input {
+    display: none;
+}

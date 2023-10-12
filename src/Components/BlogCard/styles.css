@@ -1,0 +1,161 @@
+.blog-card {
+    padding: 0.5rem;
+    margin: 0 5rem;
+    display: flex;
+    gap: 1rem;
+    height: 20rem;
+    transition: all 0.3s;
+    border-radius: 1rem;
+    color: var(--grey);
+}
+
+.blog-card:hover {
+    cursor: pointer;
+    background-color: var(--dark-theme);
+}
+
+.blog-details-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog-user-name {
+    width: 100%;
+}
+
+.blog-image-section {
+    width: 50%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-gradient);
+}
+
+.blog-image-section span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.blog-image-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.blog-content-section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content {
+    font-weight: 200;
+}
+
+.blog-date {
+    font-weight: 200;
+    width: 100%;
+}
+
+.btn-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.btn-section button {
+    min-width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    min-height: fit-content;
+    border: none;
+    opacity: 0.9;
+    background: var(--dark-theme);
+    color: var(--white);
+    transition: all 0.3s;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-section button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.blog-card .loader-container {
+    height: 100%;
+}
+
+@media screen and (max-width:1080px) {
+    .blog-card {
+        height: 8rem;
+        padding: 0;
+        margin: 0;
+        gap: 0.5rem;
+    }
+
+    .blog-content-section {
+        display: none;
+    }
+
+    .blog-details-section {
+        width: 50%;
+    }
+
+    .blog-title {
+        font-size: 1.2rem;
+        height: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        width: 100%;
+    }
+
+    .blog-user-name {
+        font-size: 0.8rem;
+    }
+
+    .blog-date {
+        font-size: 0.8rem;
+    }
+
+    .btn-section {
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+        display: block;
+    }
+
+    .btn-section button {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 0;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .btn-section button:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
