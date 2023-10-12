@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Loader from "../../Components/Loader/Loader";
-import LazyLoadImage from "../../Components/LazyLoadImage/LazyLoadImage";
 import LazyImage from "../../Components/LazyLoadImage/LazyLoadImage";
 
 const BlogPage = () => {

@@ -8,7 +8,6 @@ import { useNavigate } from "react-router";
 import InputComponent from "../InputComponent/InputComponent";
 import axios from "axios";
 import { setUser } from "../../redux/slices/userSlice";
-import { motion } from "framer-motion";
 
 const SignUp = () => {
   const [userName, setUserName] = useState("");

@@ -17,7 +17,7 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
 
   return (
     <>
-      <div className="burger-menu" ref={burgerMenuRef} onClick={changeToCross}>
+      <div className="burger-menu" ref={burgerMenuRef}>
         <div className="bar bar1"></div>
         <div className="bar bar2"></div>
         <div className="bar bar3"></div>
@@ -36,10 +36,10 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
             </NavLink>
             {getLoggedInUser && (
               <>
-                <NavLink to={"/create-blog"} onClcik={changeToCross}>
+                <NavLink to={"/create-blog"}>
                   <p onClick={changeToCross}>Create Blog</p>
                 </NavLink>
-                <NavLink to={"/profile"} onClcik={changeToCross}>
+                <NavLink to={"/profile"}>
                   <p onClick={changeToCross}>Profile</p>
                 </NavLink>
                 <LoadingButton
@@ -51,7 +51,7 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
             )}
             {!getLoggedInUser && (
               <>
-                <NavLink to={"/login"} onClcik={changeToCross}>
+                <NavLink to={"/login"}>
                   <p onClick={changeToCross}>Login/SignUp</p>
                 </NavLink>
               </>
