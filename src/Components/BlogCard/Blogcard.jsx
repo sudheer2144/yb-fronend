@@ -7,6 +7,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { MdDelete } from "react-icons/md";
 import { BsPencilSquare } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Blogcard = ({ blog, setDeletedState }) => {
   const navigate = useNavigate();
@@ -38,7 +39,13 @@ const Blogcard = ({ blog, setDeletedState }) => {
 
   return (
     <>
-      <div className="blog-card" onClick={handleClick}>
+      <motion.div
+        className="blog-card"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        onClick={handleClick}
+      >
         <div className="blog-image-section">
           <LazyImage image={blog.image} />
         </div>
@@ -60,7 +67,7 @@ const Blogcard = ({ blog, setDeletedState }) => {
             </button>
           </div>
         )}
-      </div>
+      </motion.div>
     </>
   );
 };
