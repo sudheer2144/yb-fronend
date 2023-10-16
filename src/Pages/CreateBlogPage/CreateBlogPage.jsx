@@ -39,7 +39,7 @@ const CreateBlogPage = () => {
         navigate(`/blog/${res.data.blogId}`);
       } catch (error) {
         setIsLoading(false);
-        toast.error(error.message);
+        toast.error(error.response.data.message);
       }
     } else {
       toast.info("Enter valid values !");

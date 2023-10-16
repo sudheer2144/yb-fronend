@@ -56,7 +56,7 @@ const UpdateBlogPage = () => {
         navigate(`/blog/${blogID}`);
       } catch (error) {
         setIsLoading(false);
-        toast.error(error.message);
+        toast.error(error.response.data.message);
       }
     } else {
       toast.info("Enter valid values !");
