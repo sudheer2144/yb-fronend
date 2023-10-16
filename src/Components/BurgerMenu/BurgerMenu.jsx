@@ -17,7 +17,7 @@ const BurgerMenu = ({ logoutHandleClick, isLoading }) => {
 
   return (
     <>
-      <div className="burger-menu" ref={burgerMenuRef}>
+      <div className="burger-menu" ref={burgerMenuRef} onClick={changeToCross}>
         <div className="bar bar1"></div>
         <div className="bar bar2"></div>
         <div className="bar bar3"></div>
